@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+
+  {% block content %}
+  <!-- Full Page Image Background Carousel Header -->
+  <header id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+
+      <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for Slides -->
+      <div class="carousel-inner">
+
+          {% for cover_photo in cover_photos.public %}
+
+            {% if forloop.counter == 1 %}
+              <div class="item active">
+            {% else %}
+              <div class="item">
+            {% endif %}
+              <!-- Set the first background image using inline CSS below. -->
+
+              <div class="fill" style="background-image:url('{{ cover_photo.get_absolute_url }}{{ cover_photo.image.url }}');"></div>
+
+              <div class="carousel-caption">
+                  <h2>{{ cover_photo.title }}</h2>
+              </div>
+          </div>
+
+          {% endfor %}
+
+          <!--div class="item"-->
+              <!-- Set the second background image using inline CSS below. -->
+              <!--div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+              <div class="carousel-caption">
+                  <h2>Caption 2</h2>
+              </div>
+          </div>
+          <div class="item"-->
+              <!-- Set the third background image using inline CSS below. -->
+              <!--div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+              <div class="carousel-caption">
+                  <h2>Caption 3</h2>
+              </div>
+          </div-->
+      </div>
+
+
+      <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+    <div class="container craft-canvas">
+      <div class="row">
+        <div class="col-md-12">
+            <img class="img-center" src="https://chumbakapp.cdn.prismic.io/chumbakapp/11e65a3eee497c20b35e87bc6e1cc3e578e9accb_lunch1x1.jpg" />
+            <img class="img-center" src="https://chumbakapp.cdn.prismic.io/chumbakapp/11e65a3eee497c20b35e87bc6e1cc3e578e9accb_lunch1x1.jpg" />
+            <img class="img-center" src="https://chumbakapp.cdn.prismic.io/chumbakapp/11e65a3eee497c20b35e87bc6e1cc3e578e9accb_lunch1x1.jpg" />
+        </div>
+
+      </div>
+      <hr class="eighty-pc-sep">
+
+    </div>
+
+
+    <div class="featured-canvas">
+      <div class="container">
+      <h3>Featured Products</h3>
+
+      <div class="row">
+
+
+              <div class="col-md-3 col-centered product_thumb">
+
+                  <img src="https://chumbakapp.cdn.prismic.io/chumbakapp/11e65a3eee497c20b35e87bc6e1cc3e578e9accb_lunch1x1.jpg" height="60%"/>
+
+                  <h4>Product Name</h4>
+                  <h5>Rs 565</h5>
+                  <p>
+                    <button class="btn btn-primary nukkad-button">Wishlist</button>
+                    <button class="btn btn-primary nukkad-button">Buy Now</button>
+                  </p>
+
+              </div>
+              <div class="col-md-3 col-centered product_thumb">
+
+                  <img src="https://chumbakapp.cdn.prismic.io/chumbakapp/11e65a3eee497c20b35e87bc6e1cc3e578e9accb_lunch1x1.jpg" height="60%"/>
+
+                  <h4>Product Name</h4>
+                  <h5>Rs 565</h5>
+                  <p>
+                    <button class="btn btn-primary nukkad-button">Wishlist</button>
+                    <button class="btn btn-primary nukkad-button">Buy Now</button>
+                  </p>
+
+              </div>
+              <div class="col-md-3 col-centered product_thumb">
+
+                  <img src="https://chumbakapp.cdn.prismic.io/chumbakapp/11e65a3eee497c20b35e87bc6e1cc3e578e9accb_lunch1x1.jpg" height="60%"/>
+
+                  <h4>Product Name</h4>
+                  <h5>Rs 565</h5>
+                  <p>
+                    <button class="btn btn-primary nukkad-button">Wishlist</button>
+                    <button class="btn btn-primary nukkad-button">Buy Now</button>
+                  </p>
+
+              </div>
+      </div>
+
+      </div>
+      <hr class="eighty-pc-sep">
+
+    </div>
+  </div>
+
+  {% endblock %}

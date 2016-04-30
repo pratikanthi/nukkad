@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+
+body{
+  font-family: 'Roboto Slab', serif!important;
+}
+
+/* Buttons  */
+
+.nukkad-button {
+  background:rgba(1,1,1,0);
+  border:2px solid #dc141b;
+  border-radius:0;
+  color:#dc141b;
+}
+
+.long{
+  background:#dc141b;
+  color:#fff;
+  width:32%;
+}
+
+.navbar{
+  margin-bottom:0!important;
+}
+
+.featured-canvas{
+  background:#f4f4f4;
+}
+
+.featured-canvas,.craft-canvas h3{
+  text-align:center;
+}
+
+.craft-canvas{
+  margin-top:10px;
+  text-align:center;
+}
+.craft-canvas img{
+  margin-right: 5px;
+}
+
+.eighty-pc-sep{
+  width:100%;
+}
+
+.col-centered{
+  float:none;
+  margin:0 auto;
+  display:inline-block;
+}
+
+.product_thumb{
+
+  text-align:center;
+  height:400px;
+  border:1px solid #f3f3f3;
+  margin:auto;
+  background:#fff;
+
+}
+
+.product_thumb img{
+  margin-top:30px;
+}
+
+
+/* Product Page */
+
+.product-main{
+  margin-top:50px;
+}
+
+.product-images{
+  text-align:center;
+}
+
+.product-rsidebar{
+  background: #f4f4f4;
+  text-align:center;
+  padding:20px;
+}

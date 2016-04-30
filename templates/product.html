@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container">
+
+  </div>
+  <div class="container product-main">
+      <div class="row">
+        <div class="col-md-6 product-images">
+
+          <img src="https://chumbakapp.cdn.prismic.io/chumbakapp/1c51e90d7da3daf56cdb387409199ad971bcce77_prismic---dining---desktop.jpg" />
+
+        </div>
+
+        <div class="col-md-6 product-rsidebar">
+
+          <h2>{{ product.product_name }}</h2>
+          <h3>Rs. {{ product.price }}</h3>
+          <br/>
+
+            <button class="btn btn-primary nukkad-button long">ADD TO CART</button>
+            <br/>
+            <br/>
+            <button class="btn btn-primary nukkad-button">WISHLIST</button>
+            <button class="btn btn-primary nukkad-button">SHARE</button>
+            <br/>
+            <hr/>
+            <a>Check availability</a>
+
+        </div>
+
+
+      </div>
+      <hr/>
+  </div>
+
+  <div class="container">
+
+    <h3>Description</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat nec velit a fermentum. Aenean in ante viverra, laoreet urna dapibus, aliquet ipsum. Sed auctor pulvinar odio eu facilisis. Pellentesque et eros augue. Vestibulum semper mi et auctor pretium. Donec ut maximus justo. Nullam egestas arcu ut tempor luctus. Quisque ligula erat, rutrum nec egestas eu, egestas at erat. Quisque consectetur odio vitae ipsum gravida dignissim. Quisque libero dolor, dictum mollis consequat quis, tempor ac mi. Integer in diam leo. Aliquam tristique porttitor iaculis. Ut vel ultrices lectus. Nam eget erat eget lectus fringilla pharetra sit amet nec purus. Mauris tincidunt id odio vitae scelerisque. Phasellus mattis ipsum in ligula maximus porttitor.
+    </p>
+
+  <hr/>
+
+    <h3>Specification</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat nec velit a fermentum. Aenean in ante viverra, laoreet urna dapibus, aliquet ipsum. Sed auctor pulvinar odio eu facilisis. Pellentesque et eros augue. Vestibulum semper mi et auctor pretium. Donec ut maximus justo. Nullam egestas arcu ut tempor luctus. Quisque ligula erat, rutrum nec egestas eu, egestas at erat. Quisque consectetur odio vitae ipsum gravida dignissim. Quisque libero dolor, dictum mollis consequat quis, tempor ac mi. Integer in diam leo. Aliquam tristique porttitor iaculis. Ut vel ultrices lectus. Nam eget erat eget lectus fringilla pharetra sit amet nec purus. Mauris tincidunt id odio vitae scelerisque. Phasellus mattis ipsum in ligula maximus porttitor.
+    </p>
+
+  </div>
+
+{% endblock %}
